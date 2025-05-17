@@ -34,7 +34,7 @@ In addition to the screenshots, you can also a link to your wireframe file (if y
 
 ## Task 2: Follow-up Questions
 
-For this task, please include your answers for the questions described in [mini-project instructions](Mini-project.md) file below:
+For this task, please include your answers for the questions described in [mini-project instructions](Mini-project.md):
 
 ### Q1
 
@@ -62,7 +62,7 @@ For this task, please include your answers for the questions described in [mini-
 
 ## Task 3: Github Video
 
-For this task, please include your answers for the questions described in [mini-project instructions](Mini-project.md) file below:
+For this task, please include your answers for the questions described in [mini-project instructions](Mini-project.md):
 
 ### Q1
 
