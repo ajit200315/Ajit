@@ -2,7 +2,7 @@
 
 [View Instructions Here](Mini-project.md)
 
-[How to use Github / How to submit](https://parsa-rajabi.github.io/CMPT-276/#/assignment-lab-details?id=submission)
+[How to use Github / How to submit](https://parsa-rajabi.github.io/CMPT-276/#/labs?id=github-classroom)
 
 For this lab, you will include all of your "answers" in this README file. Make sure to cite any sources you use. 
 
@@ -34,7 +34,7 @@ In addition to the screenshots, you can also a link to your wireframe file (if y
 
 ## Task 2: Follow-up Questions
 
-For this task, please include your answers for the questions described in [Lab 4](L4.md) file below:
+For this task, please include your answers for the questions described in [mini-project instructions](Mini-project.md) file below:
 
 ### Q1
 
@@ -62,7 +62,7 @@ For this task, please include your answers for the questions described in [Lab 4
 
 ## Task 3: Github Video
 
-For this task, please include your answers for the questions described in [Lab 4](L4.md) file below:
+For this task, please include your answers for the questions described in [mini-project instructions](Mini-project.md) file below:
 
 ### Q1
 

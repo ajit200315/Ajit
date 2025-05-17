@@ -118,7 +118,7 @@ Answer the following questions on this repo's [README.md](README.md) file (NOT o
 2. `[0.5 marks]` Provide an overview of your website and all the elements that it includes
 3. `[1 marks]` What is a favicon and why is it important for SEO?
 4. `[1 marks]` What are Github Pages? How do they differ from a regular webpage?
-5. `[1 marks]` What are Github Actions? Provide an example of a `.yml` file that you used in your lab and explain what it does, line by line in plain English.
+5. `[1 marks]` What are Github Actions and `.yml` files? How do they relate to Github Pages?
 6. `[0.5 mark]` What technology stack did you use to develop this website? Why did you choose this stack?
 
 
