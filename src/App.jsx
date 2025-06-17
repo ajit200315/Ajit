@@ -1,12 +1,14 @@
-
 import './App.css'
+import { BackgroundBeams } from './Component/Background'
 
 function App() {
  
 
   return (
     <>
-    <p className='bg-pink-700'>d</p>
+    <body className="bg-black text-white min-h-screen">
+      <BackgroundBeams/>
+    </body>
     </>
   )
 }
