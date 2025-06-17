@@ -14,65 +14,52 @@ export default function GlassmorphicNavbar() {
 
   return (
     
+    <nav className="sticky top-[10px] z-50 ml-auto md:mx-auto w-fit md:w-full md:max-w-md">
       
-      <nav className="sticky top-4 z-50 mx-4 md:mx-8">
-        <div className="backdrop-blur-md bg-black/30 border border-white/10 rounded-3xl px-6 py-4 shadow-xl">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="text-white font-bold text-xl">Portfolio</div>
-
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
-              {navItems.map((item) => (
+      <div className="w-fit md:w-full backdrop-blur-md bg-black/30 border border-white/10 rounded-2xl px-2 py-2 md:px-4 md:py-3 shadow-xl">
+        <div className="flex items-center justify-between">
+          {/* Desktop navigation */}
+          <ul className="hidden md:flex flex-1 justify-evenly">
+            {navItems.map((item) => (
+              <li key={item.name}>
                 <a
-                  key={item.name}
                   href={item.href}
                   className="text-white/80 hover:text-white transition-colors duration-300 font-medium relative group"
                 >
                   {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full rounded-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full rounded-full" />
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          {/* Mobile hamburger */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden text-white p-2 rounded-xl hover:bg-black/20 transition-colors duration-300"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 pt-4 border-t border-white/20">
+            <div className="flex flex-col space-y-4">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-white/80 hover:text-white transition-colors duration-300 font-medium py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
                 </a>
               ))}
             </div>
-
-            {/* CTA Button */}
-            <div className="hidden md:block">
-              <button className="bg-black/20 hover:bg-black/30 text-white px-6 py-2 rounded-full border border-white/30 transition-all duration-300 backdrop-blur-sm font-medium">
-                Hire Me
-              </button>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-white p-2 rounded-xl hover:bg-black/20 transition-colors duration-300"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
           </div>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="md:hidden mt-4 pt-4 border-t border-white/20">
-              <div className="flex flex-col space-y-4">
-                {navItems.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-white/80 hover:text-white transition-colors duration-300 font-medium py-2"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
-                ))}
-                <button className="bg-black/20 hover:bg-black/30 text-white px-6 py-2 rounded-full border border-white/30 transition-all duration-300 backdrop-blur-sm font-medium mt-4 self-start">
-                  Hire Me
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
-      </nav>
-    
+        )}
+      </div>
+    </nav>
   );
 }
