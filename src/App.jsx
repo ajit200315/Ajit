@@ -1,5 +1,7 @@
 import './App.css'
-import { BackgroundBeams } from './Component/Background'
+import { Background } from './Component/Background'
+import GlassmorphicNavbar from "./Component/Navbar";
+
 
 function App() {
  
@@ -7,8 +9,16 @@ function App() {
   return (
     <>
     <body className="bg-black text-white min-h-screen">
-      <BackgroundBeams/>
-    </body>
+
+      <div className='p-9'>
+        <p className='text-5xl absolute top-9 left-9'>Ajit.</p>
+      <GlassmorphicNavbar />
+      </div>
+
+      <Background/>
+
+
+      </body>
     </>
   )
 }
