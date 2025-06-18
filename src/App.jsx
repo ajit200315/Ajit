@@ -18,7 +18,7 @@ function App() {
         {/* Main Content Section */}
         <div className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:pl-27">
           
-          {/* Text Content - Mobile First, then side-by-side on larger screens */}
+          
           <div className="w-full lg:w-1/2 z-10 order-2 lg:order-1 mt-8 lg:mt-0">
             <div className="text-center lg:text-left space-y-4 md:space-y-6">
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
@@ -117,6 +117,20 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
+  <div className="text-center">
+    <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600 font-bold">
+      Check out my 
+    </p> 
+    <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
+      Projects 
+    </h1>
+  </div>
+</section>
+
+
+
 
         <Background />
       </body>
