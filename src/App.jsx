@@ -6,9 +6,9 @@ import { ContainerTextFlip } from "./Component/HomePageTextAnimation";
 function App() {
   return (
     <>
-      <body className="bg-black text-white min-h-screen overflow-x-hidden">
+      <body className="bg-black text-white overflow-x-hidden">
         {/* Header Section */}
-        <div className=" p-4 sm:p-6 md:pt-9 relative z-10">
+        <div className="p-4 sm:p-6 md:pt-9 relative z-10">
           <p className="text-3xl sm:text-4xl md:text-5xl absolute top-4 left-4 sm:top-6 sm:left-6 md:top-9 md:left-9 z-20">
             Ajit.
           </p>
@@ -16,9 +16,9 @@ function App() {
         </div>
 
         {/* Main Content Section */}
-        <div className="relative min-h-[80vh] flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:pl-27">
+        <div className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:pl-27">
+          
           {/* Text Content - Mobile First, then side-by-side on larger screens */}
-
           <div className="w-full lg:w-1/2 z-10 order-2 lg:order-1 mt-8 lg:mt-0">
             <div className="text-center lg:text-left space-y-4 md:space-y-6">
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
@@ -27,11 +27,11 @@ function App() {
 
               <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 I'm{" "}
-                <span className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text -z-10">
+                <span className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
                   Ajit Chauhan
                 </span>
               </p>
-
+              
               <div className="mt-6 md:mt-10">
                 <ContainerTextFlip
                   words={["A Software Dev", "A CS Student", "A Chess Player"]}
@@ -49,10 +49,10 @@ function App() {
           </div>
         </div>
 
-        {/* About Me Section */}
-
+        {/* About Me Section - Full Page */}
         <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
-                 {/* About Me Image */}
+          
+          {/* About Me Image */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start mb-8 lg:mb-0">
             <img 
               src="Photos/about picture.png" 
@@ -68,7 +68,52 @@ function App() {
                 About Me
               </h2>
               
-              
+              <div className="space-y-4 text-gray-300">
+                <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+                  As a student passionate about software development, I love
+                  tackling challenging problems and creating applications with
+                  cutting-edge technologies. I'm always excited to expand my
+                  knowledge and enhance my skills as a developer.
+                </p>
+                
+                <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+                  When I'm not coding, you'll find me strategizing over a chess
+                  board or exploring new technologies. I believe in continuous
+                  learning and pushing the boundaries of what's possible.
+                </p>
+                
+              </div>
+
+              {/* Contact Information */}
+              <div className="space-y-4 mt-8">
+                {/* Email */}
+                <div className="flex items-center justify-center lg:justify-start gap-3">
+                  <img 
+                    src="Photos/email-icon.png" 
+                    alt="Email Icon" 
+                    className="size-10" 
+                  />
+                  <a href="mailto:Ajitchauhan200315@gmail.com">
+                    <p className="text-lg sm:text-xl md:text-2xl leading-relaxed hover:text-blue-400 transition-colors">
+                      Ajitchauhan200315@gmail.com
+                    </p>
+                  </a>
+                </div>
+
+                {/* Location */}
+                <div className="flex items-center justify-center lg:justify-start gap-3">
+                  <img 
+                    src="Photos/location.png" 
+                    alt="Location Icon" 
+                    className="size-10" 
+                  />
+                  <a href="https://www.google.com/maps/place/Vancouver,+BC/@49.2577062,-123.2063047,12z/data=!3m1!4b1!4m6!3m5!1s0x548673f143a94fb3:0xbb9196ea9b81f38b!8m2!3d49.2827291!4d-123.1207375!16zL20vMDgwaDI?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D">
+                    <p className="text-lg sm:text-xl md:text-2xl leading-relaxed hover:text-pink-400 transition-colors">
+                      Vancouver, Canada
+                    </p>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
