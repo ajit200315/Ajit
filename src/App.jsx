@@ -5,7 +5,13 @@ import { ContainerTextFlip } from "./Component/HomePageTextAnimation";
 import { Carousel } from "./Component/ProjectCards";
 import { CardSpotlight } from "./Component/CardSpotlight";
 
+import { ContactForm } from "./Component/ContactForm";
+
 function App() {
+
+   
+
+
   const slideData = [
     {
       title: "Currency Converter",
@@ -52,7 +58,7 @@ function App() {
 
   return (
     <>
-      <body className="bg-black text-white overflow-x-hidden">
+      <div className="bg-black text-white overflow-x-hidden scale-z-150">
         {/* Header Section */}
         <div className="p-4 sm:p-6 md:pt-9 relative z-10">
           <p className="text-3xl sm:text-4xl md:text-5xl absolute top-4 left-4 sm:top-6 sm:left-6 md:top-9 md:left-9 z-20">
@@ -178,69 +184,138 @@ function App() {
 
         {/* Project Section */}
         <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
-  <h2 className="text-6xl bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text mb-10">
-    Tech Stack
-  </h2>
+          <h2 className="text-6xl bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text mb-10">
+            Tech Stack
+          </h2>
 
-  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-    
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/c-original.svg" alt="C language icon" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">C</span>
-    </CardSpotlight>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/c-original.svg"
+                alt="C language icon"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                C
+              </span>
+            </CardSpotlight>
 
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/cplusplus-original.svg" alt="Cpp language icon" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">C++</span>
-    </CardSpotlight>
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/cplusplus-original.svg"
+                alt="Cpp language icon"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                C++
+              </span>
+            </CardSpotlight>
 
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/git-original.svg" alt="Git" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">Git</span>
-    </CardSpotlight>
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/git-original.svg"
+                alt="Git"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                Git
+              </span>
+            </CardSpotlight>
 
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/github-mark-white.png" alt="Github" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">GitHub</span>
-    </CardSpotlight>
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/github-mark-white.png"
+                alt="Github"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                GitHub
+              </span>
+            </CardSpotlight>
 
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/html5-original.svg" alt="Html" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">HTML</span>
-    </CardSpotlight>
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/html5-original.svg"
+                alt="Html"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                HTML
+              </span>
+            </CardSpotlight>
 
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/javascript-original.svg" alt="Javascript" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">JavaScript</span>
-    </CardSpotlight>
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/javascript-original.svg"
+                alt="Javascript"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                JavaScript
+              </span>
+            </CardSpotlight>
 
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/python-original.svg" alt="Python" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">Python</span>
-    </CardSpotlight>
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/python-original.svg"
+                alt="Python"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                Python
+              </span>
+            </CardSpotlight>
 
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/react.png" alt="React JS" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">React</span>
-    </CardSpotlight>
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/react.png"
+                alt="React JS"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                React
+              </span>
+            </CardSpotlight>
 
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/css3-original.svg" alt="Css" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">CSS</span>
-    </CardSpotlight>
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/css3-original.svg"
+                alt="Css"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                CSS
+              </span>
+            </CardSpotlight>
 
-    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
-      <img src="Photos/Tailwind.png" alt="Tailwind" className="h-20 w-20 object-contain mb-2 scale-z-50" />
-      <span className="text-sm font-medium text-white scale-z-50">Tailwind CSS</span>
-    </CardSpotlight>
+            <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+              <img
+                src="Photos/Tailwind.png"
+                alt="Tailwind"
+                className="h-20 w-20 object-contain mb-2 scale-z-50"
+              />
+              <span className="text-sm font-medium text-white scale-z-50">
+                Tailwind CSS
+              </span>
+            </CardSpotlight>
+          </div>
+        </section>
 
-  </div>
-</section>
+      {/* Contact Section */}
+      <section id="contact" className="min-h-screen px-6 lg:px-20 flex flex-col items-center justify-center">
+        <div className="flex">
 
+        <div className="text-center">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text mb-16 font-bold">
+          <i>Let's connect!</i>
+        </h2>
+       <ContactForm/>
+        </div>
 
-
+        </div>
+      </section>
         <Background />
-      </body>
+      </div>
     </>
   );
 }
