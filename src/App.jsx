@@ -59,14 +59,15 @@ function App() {
 
   return (
     <>
-      <div className="bg-black text-white overflow-x-hidden scale-z-150">
-        {/* Header Section */}
-        <div className="p-4 sm:p-6 md:pt-9 relative z-10">
+    <div className=" relative z-10">
           <p className="text-3xl sm:text-4xl md:text-5xl absolute top-4 left-4 sm:top-6 sm:left-6 md:top-9 md:left-9 z-20">
             Ajit.
           </p>
           <GlassmorphicNavbar />
         </div>
+      <div className="bg-black text-white overflow-x-hidden scale-z-50">
+        {/* Header Section */}
+        
 
         {/* Main Content Section */}
         <div className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:pl-27">
@@ -101,7 +102,7 @@ function App() {
         </div>
 
         {/* About Me Section - Full Page */}
-        <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
+        <section id="about" className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
           {/* About Me Image */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start mb-8 lg:mb-0">
             <img
@@ -167,7 +168,7 @@ function App() {
           </div>
         </section>
 
-        <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
+        <section id="projects" className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
           <div className="text-center">
             <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600 font-bold">
               Check out my
@@ -184,7 +185,7 @@ function App() {
         </section>
 
         {/* Project Section */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
+        <section  id="skills" className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
           <h2 className="text-6xl bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text mb-10">
             Tech Stack
           </h2>
@@ -320,10 +321,6 @@ function App() {
         <div className="flex justify-center">
         <Footer/>
         </div>
-  
-
-
-
         <Background />
       </div>
     </>
