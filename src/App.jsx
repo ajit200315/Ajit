@@ -168,11 +168,16 @@ function App() {
               Projects
             </h1>
 
-            <div className="overflow-hidden flex gap-4 m-5">
+            <div className="overflow-hidden flex gap-10 m-5">
               <Carousel slides={slideData} />
               <Carousel slides={slideData2} />
             </div>
           </div>
+        </section>
+
+
+        <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
+
         </section>
 
         <Background />
