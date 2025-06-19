@@ -11,8 +11,18 @@ export default function Footer() {
       
       <div className="text-center sm:text-left space-y-2">
         <h2 className="text-3xl font-semibold font-handwriting">Let&apos;s connect</h2>
+                  <a href="https://www.linkedin.com/in/ajit-chauhan-88801924a/">
+                    <p className="hover:text-blue-400">
+                      Linkedin
+                    </p>
+                  </a>
+                  <a href="https://github.com/ajit200315">
+                    <p className="hover:text-blue-400">
+                      Github
+                    </p>
+                  </a>
                   <a href="mailto:Ajitchauhan200315@gmail.com">
-                    <p >
+                    <p className="hover:text-blue-400">
                       Ajitchauhan200315@gmail.com
                     </p>
                   </a>
