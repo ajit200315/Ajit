@@ -3,25 +3,26 @@ import { Background } from "./Component/Background";
 import GlassmorphicNavbar from "./Component/Navbar";
 import { ContainerTextFlip } from "./Component/HomePageTextAnimation";
 import { Carousel } from "./Component/ProjectCards";
+import { CardSpotlight } from "./Component/CardSpotlight";
 
 function App() {
   const slideData = [
     {
       title: "Currency Converter",
-      button: ( 
-            <a
-        href="https://github.com/ajit200315/Currency-exchange-"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center gap-2 hover:bg-gradient-to-r from-blue-500 to-purple-500 hover:text-transparent hover:bg-clip-text"
-      >
-        <img
-          src="Photos/github-original.svg"
-          alt="GitHub"
-          className="w-5 h-5"
-        />
-        <span>View on GitHub</span>
-      </a>
+      button: (
+        <a
+          href="https://github.com/ajit200315/Currency-exchange-"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 hover:bg-gradient-to-r from-blue-500 to-purple-500 hover:text-transparent hover:bg-clip-text"
+        >
+          <img
+            src="Photos/github-original.svg"
+            alt="GitHub"
+            className="w-5 h-5"
+          />
+          <span>View on GitHub</span>
+        </a>
       ),
       src: "Photos/Project1.png",
     },
@@ -31,19 +32,19 @@ function App() {
     {
       title: "Tic Tac Toe",
       button: (
-            <a
-        href="https://github.com/ajit200315/Tic-Tac-Toe"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center gap-2 hover:bg-gradient-to-r from-blue-500 to-purple-500 hover:text-transparent hover:bg-clip-text"
-      >
-        <img
-          src="Photos/github-original.svg"
-          alt="GitHub"
-          className="w-5 h-5"
-        />
-        <span>View on GitHub</span>
-      </a>
+        <a
+          href="https://github.com/ajit200315/Tic-Tac-Toe"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 hover:bg-gradient-to-r from-blue-500 to-purple-500 hover:text-transparent hover:bg-clip-text"
+        >
+          <img
+            src="Photos/github-original.svg"
+            alt="GitHub"
+            className="w-5 h-5"
+          />
+          <span>View on GitHub</span>
+        </a>
       ),
       src: "Photos/Project2.png",
     },
@@ -175,10 +176,68 @@ function App() {
           </div>
         </section>
 
+        {/* Project Section */}
+        <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
+  <h2 className="text-6xl bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text mb-10">
+    Tech Stack
+  </h2>
 
-        <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/c-original.svg" alt="C language icon" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">C</span>
+    </CardSpotlight>
 
-        </section>
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/cplusplus-original.svg" alt="Cpp language icon" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">C++</span>
+    </CardSpotlight>
+
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/git-original.svg" alt="Git" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">Git</span>
+    </CardSpotlight>
+
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/github-mark-white.png" alt="Github" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">GitHub</span>
+    </CardSpotlight>
+
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/html5-original.svg" alt="Html" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">HTML</span>
+    </CardSpotlight>
+
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/javascript-original.svg" alt="Javascript" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">JavaScript</span>
+    </CardSpotlight>
+
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/python-original.svg" alt="Python" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">Python</span>
+    </CardSpotlight>
+
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/react.png" alt="React JS" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">React</span>
+    </CardSpotlight>
+
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/css3-original.svg" alt="Css" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">CSS</span>
+    </CardSpotlight>
+
+    <CardSpotlight className="h-48 w-40 flex flex-col items-center justify-center text-center">
+      <img src="Photos/Tailwind.png" alt="Tailwind" className="h-20 w-20 object-contain mb-2 scale-z-50" />
+      <span className="text-sm font-medium text-white scale-z-50">Tailwind CSS</span>
+    </CardSpotlight>
+
+  </div>
+</section>
+
+
 
         <Background />
       </body>
