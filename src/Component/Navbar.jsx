@@ -13,7 +13,9 @@ export default function GlassmorphicNavbar() {
   ];
 
   return (
+    <>
     <nav className="fixed top-2 left-1/2 transform -translate-x-1/2 z-40 w-fit md:w-full md:max-w-md md:pt-8">
+     
       <div className="w-fit md:w-full backdrop-blur-md bg-black/30 border border-white/10 rounded-2xl px-2 py-2 md:px-4 md:py-3 shadow-xl">
         <div className="flex items-center justify-between">
           {/* Desktop navigation */}
@@ -59,5 +61,6 @@ export default function GlassmorphicNavbar() {
         )}
       </div>
     </nav>
+    </>
   );
 }

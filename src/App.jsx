@@ -4,14 +4,10 @@ import GlassmorphicNavbar from "./Component/Navbar";
 import { ContainerTextFlip } from "./Component/HomePageTextAnimation";
 import { Carousel } from "./Component/ProjectCards";
 import { CardSpotlight } from "./Component/CardSpotlight";
-
 import { ContactForm } from "./Component/ContactForm";
 import Footer from "./Component/Footer";
 
 function App() {
-
-   
-
 
   const slideData = [
     {
@@ -60,16 +56,16 @@ function App() {
   return (
     <>
     <div className=" relative z-10">
-          <p className="text-3xl sm:text-4xl md:text-5xl absolute top-4 left-4 sm:top-6 sm:left-6 md:top-9 md:left-9 z-20">
-            Ajit.
-          </p>
           <GlassmorphicNavbar />
         </div>
       <div className="bg-black text-white overflow-x-hidden scale-z-50">
         {/* Header Section */}
         
-
+        
+<section id="home" className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
+        <img src="Photos/icon.png" alt="" className="size-25 relative bottom-80 right-15"/>
         {/* Main Content Section */}
+        
         <div className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:pl-27">
           <div className="w-full lg:w-1/2 z-10 order-2 lg:order-1 mt-8 lg:mt-0">
             <div className="text-center lg:text-left space-y-4 md:space-y-6">
@@ -100,6 +96,7 @@ function App() {
             />
           </div>
         </div>
+        </section>
 
         {/* About Me Section - Full Page */}
         <section id="about" className="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative">
