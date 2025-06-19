@@ -6,6 +6,7 @@ import { Carousel } from "./Component/ProjectCards";
 import { CardSpotlight } from "./Component/CardSpotlight";
 
 import { ContactForm } from "./Component/ContactForm";
+import Footer from "./Component/Footer";
 
 function App() {
 
@@ -314,6 +315,15 @@ function App() {
 
         </div>
       </section>
+
+      
+        <div className="flex justify-center">
+        <Footer/>
+        </div>
+  
+
+
+
         <Background />
       </div>
     </>
