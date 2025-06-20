@@ -1,7 +1,7 @@
 // src/Component/Background.tsx
 "use client";
 import React from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 export function Background() {
   return (
